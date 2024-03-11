@@ -6,7 +6,7 @@ import voluptuous as vol
 
 import homeassistant.helpers.config_validation as cv
 from homeassistant.components.device_tracker.config_entry import ScannerEntity
-from .router import TechnicolorRouter
+from custom_components.technicolor.router import TechnicolorRouter
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import (
     CONF_DEVICES,
@@ -16,7 +16,7 @@ from homeassistant.const import (
     CONF_USERNAME,
 )
 from homeassistant.core import HomeAssistant, callback
-from .const import DOMAIN
+from custom_components.technicolor.const import DOMAIN
 from homeassistant.helpers.dispatcher import async_dispatcher_connect
 
 DEFAULT_DEVICE_NAME = "Unknown device"

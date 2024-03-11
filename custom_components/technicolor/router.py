@@ -1,7 +1,7 @@
 import logging
 from datetime import timedelta
 
-from technicolorgateway import TechnicolorGateway
+from custom_components.technicolor.technicolorgateway_no_cert_verify import TechnicolorGateway
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST, CONF_USERNAME, CONF_PASSWORD
